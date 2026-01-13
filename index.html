@@ -12,13 +12,18 @@
 </head>
 
 <body class="bg-black text-white font-serif">
-    <header class="mx-30  p-4">
+    <header class="md:mx-30  p-4">
         <nav>
             <ul class="flex justify-between align-center item-center">
                 <li class="text-[40px] ">Yogesh Deshar</li>
                 <li>
                     <div>
-                        <ul class="flex gap-[51px] align-center justify-center  p-3">
+                        <ul class="md:hidden cursor-pointer" id="menu"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="50" height="50" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z" />
+                            </svg></ul>
+                        <ul id="nav-links"
+                            class="hidden md:flex md:flex-row md:gap-[51px] align-center justify-center p-3">
                             <li><a href="#about">About</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#contact">Contact</a></li>
@@ -30,56 +35,67 @@
         </nav>
     </header>
 
-    <section class="mx-30 mt-5">
-        <main class="flex justify-between  align-center h-[500px] " id="about">
-            <div class="text- flex flex-col justify-center">
+    <section class="p-3 md:p-0 md:mx-30 mt-5 mx-10">
+        <main class="flex flex-col md:flex-row justify-between align-center md:h-[500px] " id="about">
+            <div class="order-2 md:order-1 flex flex-col justify-center">
                 <p class="text-[32px]">Hi I am,</p>
                 <h2 class="text-[48px] mt-[-20px]">Yogesh Deshar</h2>
-                <p class="w-[525px] mt-3">A passionate frontend developer specializing in React,Nextjs, TypeScript, and
+                <p class="md:w-[525px] mt-3">A passionate frontend developer specializing in React,Nextjs, TypeScript,
+                    and
                     Tailwind
                     CSS, craft intuitive, performant
                     web experiences that blend modern design with robust functionality</p>
             </div>
 
-            <div class="rounded-[50%] border w-[450px] h-[450px] overflow-hidden relative mr-5 mt-5">
+            <div
+                class="order-1 md:order-2 rounded-[50%] border h-[300px] w-[300px] md:w-[450px] md:h-[450px] overflow-hidden relative md:mr-5 mt-5 mx-15">
                 <img src="./Image/mainimage.jpg" alt="Main Image" class="absolute top-0 left-0" />
             </div>
         </main>
 
-        <main class="bg-[#616161] mt-2 p-4 rounded-[10px]" id="services">
+        <main class="bg-[#616161] mt-5 md:mt-2 p-4 rounded-[10px]" id="services">
             <div>
-                <h2 class="text-[48px] p-3">Services I provide</h2>
+                <h2 class="text-[25px] text-center md:text-start md:text-[48px] p-3">Services I provide</h2>
             </div>
 
-            <div class="flex gap-20 mx-20 w-[100%]">
-                <div class="min-w-[503px] w-[503px] border border-3 h-[300px] rounded-[10px] ">
+            <div class="flex flex-col md:flex-row gap-20  md:mx-20 w-[100%]">
+                <div class="w-[340px] md:w-[503px] border border-3 md:h-[300px] rounded-[10px] ">
                     <div class="flex gap-[48px] p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="w-[138px] h-[138px]">
                             <path fill="currentColor"
                                 d="m12.89 3l1.96.4L11.11 21l-1.96-.4zm6.7 9L16 8.41V5.58L22.42 12L16 18.41v-2.83zM1.58 12L8 5.58v2.83L4.41 12L8 15.58v2.83z" />
                         </svg>
-                        <h3 class="text-[40px] w-[211px] mt-2">Web Development</h3>
+                        <h3 class="text-[30px] md:text-[40px] w-[211px] mt-2">Web Development</h3>
                     </div>
 
-                    <p class=" w-[427px] mx-10 text-[18px]">Profound knowledge on Web base Application using Javascript
+                    <p class=" md:w-[427px] mx-10 text-[18px]">Profound knowledge on Web base Application using
+                        Javascript
                         Frame
                         work like React, Nextjs With Tailwind css</p>
                 </div>
 
-                <div class="min-w-[503px] w-[503px] border border-3 h-[300px] rounded-[10px] ">
+
+
+                <div class="w-[340px] md:w-[503px] border border-3 md:h-[300px] rounded-[10px] ">
                     <div class="flex gap-[48px] p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="138" height="138" viewBox="0 0 24 24">
                             <path fill="currentColor" fill-rule="evenodd"
                                 d="M8.667 9.417a2.583 2.583 0 1 0 0 5.166h2.583V9.417zm2.583-1.5H8.667a2.583 2.583 0 0 1 0-5.167h2.583zm1.5-5.167v5.167h2.583a2.584 2.584 0 0 0 0-5.167zm2.583 6.666a2.583 2.583 0 0 0-2.583 2.542v.083a2.583 2.583 0 1 0 2.583-2.625m-6.666 6.667a2.584 2.584 0 1 0 2.583 2.584v-2.584z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <h3 class="text-[40px] w-[211px] mt-2">Deginer</h3>
+                        <h3 class="text-[30px] md:text-[40px] w-[211px] mt-2">Deginer</h3>
                     </div>
 
-                    <p class=" w-[427px] mx-10 text-[18px]">Create creative design and logo for Web application and
+                    <p class=" md:w-[427px] mx-10 text-[18px]">Create creative design and logo for Web application and
                         Mobile phone using Figma and Canva</p>
                 </div>
+
+
+
+
+
+
             </div>
         </main>
 
@@ -88,10 +104,10 @@
 
         <main class="bg-[#616161] mt-2 p-4 rounded-[10px] mt-10 mb-5" id="contact">
             <div>
-                <h2 class="text-[48px] p-3">How to Contact me</h2>
+                <h2 class="text-[25px] text-center md:text-[48px] p-3">How to Contact me</h2>
             </div>
 
-            <div class="flex mx-20 gap-10 ">
+            <div class="flex flex-col md:flex-row mx-15 md:mx-20 gap-10 ">
 
                 <div class="min-w-[240px] w-[240px] border border-3 h-[210px] rounded-[10px] text-center ">
                     <div class="flex flex-col p-4">
@@ -200,6 +216,62 @@
 
 
     </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/ScrollTrigger.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.registerPlugin(ScrollTrigger);
+
+            gsap.from('#about', {
+                opacity: 0,
+                y: -50,
+                duration: 1.5,
+                ease: 'power2.out',
+                scrub: 1
+            });
+
+            gsap.from('#services', {
+                opacity: 0,
+                y: -50,
+                duration: 1.5,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#services',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none',  // Play on enter, no reverse
+                    markers: false
+                }
+            });
+            gsap.from('#contact', {
+                opacity: 0,
+                y: -50,
+                duration: 1.5,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '#contact',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none',  // Play on enter, no reverse
+                    markers: false
+                }
+            });
+
+            const menu = document.getElementById('menu');
+            const navLinks = document.getElementById('nav-links');
+
+            if (menu && navLinks) {
+                menu.addEventListener('click', () => {
+                    navLinks.classList.toggle('hidden');
+                    navLinks.classList.toggle('flex');
+                    navLinks.classList.toggle('flex-col');
+                });
+            }
+        });
+    </script>
+
+
 </body>
 
 </html>
